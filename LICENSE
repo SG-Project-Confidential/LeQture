@@ -1,24 +1,18 @@
-Copyright © 2025 SG-Project-Confidential. All rights reserved.
+**Copyright © 2025 SG-Project-Confidential. All rights reserved.**
 
-This software and associated documentation files (the “Software”) are the
-intellectual property of SG-Project-Confidential.
+This software and associated documentation files (the “Software”) are the intellectual property of SG-Project-Confidential.
 
-Unauthorized copying, reproduction, modification, distribution, or use of
-the Software, in whole or in part, is strictly prohibited without the
-express prior written permission of the copyright holder.
+You are granted permission to use the Software **for personal and educational purposes only**, subject to the following conditions:
 
-You may not:
-- Copy, modify, merge, publish, distribute, sublicense, or sell copies of the Software;
-- Use the Software, in whole or in part, for any commercial or non-commercial purpose;
-- Reverse engineer, decompile, or disassemble any part of the Software;
-- Remove or alter any proprietary notices, labels, or marks.
+You may **not**:
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. IN NO EVENT SHALL
-THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY CLAIM, DAMAGES, OR
-OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE,
-ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
-OTHER DEALINGS IN THE SOFTWARE.
+* Modify, merge, publish, distribute, sublicense, or sell copies of the Software;
+* Use the Software, in whole or in part, for any **commercial purpose**;
+* Reverse engineer, decompile, or disassemble any part of the Software;
+* Remove or alter any proprietary notices, labels, or marks.
 
-For licensing inquiries, please contact: https://github.com/SG-Project-Confidential
+Unauthorized modification, redistribution, or commercial use of the Software is strictly prohibited without the express prior written permission of the copyright holder.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+For licensing inquiries, please contact: [https://github.com/SG-Project-Confidential](https://github.com/SG-Project-Confidential)
