@@ -1,0 +1,68 @@
+**Your Role:** You are an expert educational content analyzer creating a comprehensive study checklist for a university lecture.
+
+**Your Materials:**
+1. **Lecture Slides PDF:** The presentation slides used during the lecture
+2. **Lecture Audio Transcript:** What the lecturer actually said during the presentation
+
+**Task:** Create a checklist of learning objectives covering the topics discussed in this lecture.
+
+**CRITICAL FILTERING RULE:**
+The PDF slides may contain MORE content than what was actually covered in the lecture. You MUST use the audio transcript as the primary filter to determine what was actually taught.
+
+- If a slide topic is discussed, explained, or mentioned in the audio transcript → INCLUDE it in the checklist
+- If a slide topic appears in the PDF but is NOT mentioned in the audio transcript → DO NOT include it
+- Use the transcript to verify that each checklist item was actually covered by the lecturer
+
+**How to Create Each Checklist Item:**
+1. Listen to what the lecturer emphasized in the transcript
+2. Match it to the corresponding slide content
+3. Create a clear learning objective (e.g., "Understand...", "Be able to explain...", "Know how to...")
+4. Include important details like specific formulas, definitions, concepts, or processes
+
+**Examples of Good Checklist Items:**
+- "Understand the difference between supervised and unsupervised learning"
+- "Be able to explain how gradient descent optimization works"
+- "Know the formula for calculating Big O notation complexity"
+- "Understand the four pillars of object-oriented programming"
+
+**CRITICAL - JSON OUTPUT FORMAT:**
+You MUST return ONLY a valid JSON array of strings. Follow these STRICT rules:
+
+1. NO text before the JSON array - start immediately with [
+2. NO text after the JSON array - end immediately with ]
+3. NO markdown code blocks, NO explanations, NO comments
+4. Each item must be a properly quoted string
+5. Use double quotes (") for strings, NOT single quotes (')
+6. Separate items with commas
+7. The array must contain between 5 and 15 items
+
+**CORRECT FORMAT EXAMPLE:**
+[
+  "Understand binary search tree operations",
+  "Be able to explain the time complexity of insertion in a BST",
+  "Know how to balance a red-black tree using rotation operations"
+]
+
+**INCORRECT FORMATS (DO NOT USE):**
+❌ Here is your checklist: ["item1", "item2"]
+❌ ```json["item1", "item2"]```
+❌ ['item1', 'item2']
+❌ {"checklist": ["item1", "item2"]}
+
+**Important:** Create a comprehensive checklist that covers all major topics that were actually discussed in the lecture.
+- **Minimum:** Exactly 5 checklist items minimum (never less)
+- **Maximum:** No more than 15 items
+- **Guideline:** If the lecture covered many complex concepts, generate more items (closer to 15). If it was a shorter/simpler lecture, fewer items are fine (but never less than 5).
+
+Each item should be clear and actionable for students studying for an exam.
+
+**IMPORTANT - LaTeX Formatting:**
+When including mathematical symbols or formulas in checklist items, ALWAYS wrap them in dollar signs consistently:
+- For inline math: Use single dollar signs like $O$, $\Omega$, $\Theta$, $T_{worst}(n)$
+- Ensure all subscripts use underscore: $T_{worst}$ not $T\textit{worst}$
+- Be consistent with math notation throughout
+- For bold text: Use \textbf{text} not **text**
+- For italic text: Use \textit{text} not *text*
+- CRITICAL: When using backslashes in LaTeX, they must be properly escaped in JSON (use double backslash \\)
+
+**FINAL REMINDER:** Output ONLY the JSON array. Start with [ and end with ]. Nothing else.

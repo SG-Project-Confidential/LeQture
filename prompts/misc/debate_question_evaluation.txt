@@ -1,0 +1,56 @@
+You are evaluating a student's answer to a debate-style question. You must be STRICT and THOROUGH.
+
+MODEL ANSWER: "${correctAnswer}"
+STUDENT ANSWER: "${userAnswer}"
+
+=== EVALUATION CRITERIA ===
+
+TASK 1: Check if the student identified the correct person (Person A or Person B)
+- Look for explicit mention of "Person A" or "Person B" in the student's answer
+- Variations like "person a", "A", "the first person", etc. count as identification
+- Mark PERSON as "yes" ONLY if they identified the correct person
+- Mark PERSON as "no" if they identified the wrong person OR didn't identify anyone
+
+TASK 2: Check if the student provided a SUBSTANTIAL, LOGICAL argument
+This is where you must be VERY STRICT. The student MUST demonstrate understanding by:
+
+MINIMUM REQUIREMENTS (ALL must be met for ARGUMENT: yes):
+1. The answer must contain AT LEAST 20 words AFTER identifying the person
+2. The student must explain WHY that person is correct using concepts/reasoning
+3. The explanation must reference specific technical concepts, principles, or logic from the domain
+4. The student must demonstrate understanding of the underlying concept, not just state a conclusion
+
+AUTOMATIC FAIL CRITERIA (mark ARGUMENT as "no" if ANY apply):
+❌ Student just wrote "Person X" or "Person X is right" with no explanation
+❌ Student wrote "Person X because..." followed by less than 15 words
+❌ Student gave a vague reason like "because they're correct" or "because it makes sense"
+❌ Student only restated what Person X said without explaining WHY it's correct
+❌ Student didn't reference any technical concepts, principles, or specific reasoning
+❌ Student wrote a generic statement that could apply to anything
+❌ The explanation is circular (e.g., "Person B is right because Person A is wrong")
+
+WHAT COUNTS AS A VALID ARGUMENT (examples):
+✅ Explains the technical concept: "Person B is correct because red-black trees maintain balance by ensuring no path is more than twice as long as another, which guarantees O(log n) operations even in worst case scenarios"
+✅ Contrasts the options: "Person A is wrong because linear search has O(n) worst case, but Person B is correct that binary search provides O(log n) which is essential for scalability"
+✅ References lecture concepts: "Person B is right - the lecturer emphasized that worst-case guarantees are critical for production systems where adversarial input could exploit O(n²) behavior"
+
+EXAMPLES OF INVALID ARGUMENTS:
+❌ "Person B because they mentioned logarithmic complexity" (just restating, not explaining WHY)
+❌ "Person A is wrong, Person B is correct" (no reasoning)
+❌ "Person B because of better performance" (too vague, no technical detail)
+❌ "Person B, they have the right idea about the algorithm" (no explanation of what makes it right)
+
+GRADING PHILOSOPHY:
+- If unsure, mark ARGUMENT as "no" - we want to encourage thorough explanations
+- A partial explanation that shows SOME understanding but lacks depth should be marked "no"
+- Only award "yes" for ARGUMENT if the student clearly demonstrates they understand the concept
+- The student does NOT need to match the model answer word-for-word
+- The student CAN use different terminology or explanations as long as they're technically sound
+- But the explanation MUST be substantial, specific, and demonstrate real understanding
+
+=== OUTPUT FORMAT ===
+You MUST reply in this EXACT format with ONLY these two lines:
+PERSON: yes/no
+ARGUMENT: yes/no
+
+NO OTHER TEXT. NO EXPLANATION. JUST THOSE TWO LINES.

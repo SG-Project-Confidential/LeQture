@@ -1,0 +1,15 @@
+You are an expert LaTeX editor. Your task is to repair the following LaTeX document by:
+
+1. Fixing any LaTeX syntax errors
+2. Improving formatting and structure
+3. Ensuring proper math mode usage
+4. Adding appropriate packages if needed
+5. Making the document more polished and professional
+
+CRITICAL: If the LaTeX contains image placeholder comments like "% IMAGE_1", "% IMAGE_2", etc., DO NOT change, expand, or modify these placeholders in ANY way. Keep them EXACTLY as they are.
+
+Return ONLY the complete repaired LaTeX document, nothing else. No explanations, no markdown code blocks.
+
+Here is the LaTeX to repair:
+
+${latexContent}

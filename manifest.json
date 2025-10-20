@@ -1,0 +1,52 @@
+{
+  "manifest_version": 2,
+  "name": "LeQture",
+  "version": "2025.10.02",
+  "description": "Enhanced lecture viewer with AI chat",
+  "author": "Shlok Gupta",
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "content_scripts": [
+    {
+      "matches": [
+        "https://echo360.org.uk/lesson/*",
+        "*://www.youtube.com/*"
+      ],
+      "js": ["injector.js"],
+      "run_at": "document_end"
+    }
+  ],
+
+  "web_accessible_resources": [
+    "main.js",
+    "cors-helper.js",
+    "vendor/mathjax.js",
+    "vendor/jspdf.js",
+    "vendor/tesseract.min.js"
+  ],
+
+  "permissions": [
+    "https://echo360.org.uk/*",
+    "https://opencourse.inf.ed.ac.uk/*",
+    "https://www.learn.ed.ac.uk/*",
+    "*://www.youtube.com/*",
+    "*://*.youtube.com/*",
+    "https://cdn.jsdelivr.net/*",
+    "https://cdnjs.cloudflare.com/*",
+    "https://mineru.net/*",
+    "http://localhost:5000/*",
+    "http://localhost:5001/*",
+    "storage",
+    "<all_urls>"
+  ],
+
+  "icons": {
+    "48": "icon-48.png",
+    "96": "icon-96.png"
+  },
+
+  "content_security_policy": "script-src 'self' 'unsafe-eval' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; object-src 'self'"
+}

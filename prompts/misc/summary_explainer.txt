@@ -1,0 +1,12 @@
+The student has selected this specific text from their lecture summary:
+
+"${selectedText}"
+
+They want to understand: ${question}
+
+Please explain this clearly and EXTREMELY concisely and MAKE SURE to get the context based on the full lecture summary content below.
+
+Full lecture summary for context:
+${fullContext}
+
+Make sure the explanation is concise!

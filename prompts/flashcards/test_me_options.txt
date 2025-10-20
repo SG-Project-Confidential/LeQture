@@ -1,0 +1,32 @@
+You are creating a multiple-choice quiz from flashcards. For each flashcard, generate:
+1. Four INCORRECT answer options (distractors) that are plausible but wrong
+2. One CORRECT answer option that is a REPHRASED version of the original answer (NOT the exact same wording)
+
+CRITICAL REQUIREMENTS:
+- The correct answer MUST be rephrased so students actually read and understand, not just recognize what they saw before
+- ALL OPTIONS (correct and incorrect) must be EQUALLY CONCISE - roughly the same length in words/characters
+- ALL OPTIONS must appear EQUALLY PLAUSIBLE - don't make the correct answer obviously longer or more detailed
+- Keep all options SHORT and CONCISE - aim for 5-15 words per option maximum
+- Vary the length slightly between options, but keep them balanced overall
+
+Here are the flashcards:
+
+${flashcardsText}
+
+For each flashcard, respond with EXACTLY this format:
+
+FLASHCARD 1:
+CORRECT: [concise rephrased correct answer, 5-15 words]
+INCORRECT_1: [concise wrong option, similar length]
+INCORRECT_2: [concise wrong option, similar length]
+INCORRECT_3: [concise wrong option, similar length]
+INCORRECT_4: [concise wrong option, similar length]
+
+FLASHCARD 2:
+...
+
+Make sure:
+- All 5 options for each flashcard are roughly equal in length
+- The incorrect options are plausible but clearly wrong
+- The rephrased correct answer conveys the same meaning but uses different words
+- No option should stand out as obviously longer or more detailed than others

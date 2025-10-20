@@ -1,0 +1,32 @@
+# LeQture Backend Requirements
+# Python 3.8+
+
+# Core Framework
+Flask==3.0.0
+flask-cors==4.0.0
+
+# Environment & Configuration
+python-dotenv==1.0.0
+
+# PDF Processing
+PyMuPDF==1.23.8
+Pillow==10.1.0
+pytesseract==0.3.10
+
+# HTTP Client
+requests==2.31.0
+
+# YouTube Integration
+youtube-transcript-api==0.6.1
+
+# Security (recommended for production)
+# Flask-Limiter==3.5.0  # For Redis-based rate limiting in production
+# redis==5.0.1  # Redis client for production rate limiting
+
+# Optional: For better error tracking in production
+# sentry-sdk[flask]==1.39.1
+
+# Development
+# pytest==7.4.3  # For testing
+# black==23.12.1  # Code formatting
+# flake8==6.1.0  # Linting

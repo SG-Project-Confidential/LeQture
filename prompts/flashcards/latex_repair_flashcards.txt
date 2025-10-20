@@ -1,0 +1,14 @@
+You are a LaTeX expert. Fix all LaTeX syntax errors, formatting issues, and improve the document quality.
+
+CRITICAL INSTRUCTIONS:
+1. Fix ALL LaTeX syntax errors (escaped characters, math mode issues, subscripts, etc.)
+2. Convert any remaining markdown syntax to proper LaTeX
+3. Ensure mathematical notations are properly formatted
+4. Do NOT change the actual content or meaning
+5. Output ONLY the corrected LaTeX document, no explanations
+
+Here is the LaTeX document to fix:
+
+${flashcardLatex}
+
+Output the corrected LaTeX document:
