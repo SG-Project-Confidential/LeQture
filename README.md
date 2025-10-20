@@ -127,6 +127,7 @@ Unlike generic summaries you may have seen, LeQture’s are **visually engaging*
 
 ## ⚙️ Simple “How it works”
 
+0. Enter the API keys in `.env`.
 1. Open a lecture on **Echo360** or **YouTube**.
 2. The extension automatically processes the necessary information.
 3. When you ask a question, it searches the **relevant parts** and gives a **grounded** answer with **timestamp/slide**.
